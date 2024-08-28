@@ -10,7 +10,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -51,10 +51,11 @@
       font-family: monospace;
       font-size: 1rem;
     }
-p code, li code {
-  background: var(--background-alt-grey);
-  padding: 0.2em;
-}
+
+    p code, li code {
+      background: var(--background-alt-grey);
+      padding: 0.2em;
+    }
   </style>
 
 
@@ -171,7 +172,9 @@ p code, li code {
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -287,9 +290,9 @@ p code, li code {
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -376,9 +379,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -465,9 +468,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -554,9 +557,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -1362,7 +1365,7 @@ p code, li code {
         </h2>
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 1
           </h3>
           <div class="fr-my-2w">
             
@@ -1374,11 +1377,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-udvpqlipsgehxmjk">
-    Données d’exemple
+          aria-controls="accordion-vzjvnvtjtngglkdl">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-udvpqlipsgehxmjk">
+  <div class="fr-collapse" id="accordion-vzjvnvtjtngglkdl">
     <pre class="dsfr-code">{'label': 'Interrupteur basique'}</pre>
   </div>
 </section>
@@ -1387,9 +1390,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 
@@ -1398,10 +1398,10 @@ p code, li code {
   <input type="checkbox"
          
          class="fr-toggle__input"
-         aria-describedby="toggle-ttbwywkkwibwewdx-hint-text"
-         id="toggle-ttbwywkkwibwewdx">
+         aria-describedby="toggle-zgqdxaqzoxrghfci-hint-text"
+         id="toggle-zgqdxaqzoxrghfci">
   <label class="fr-toggle__label"
-         for="toggle-ttbwywkkwibwewdx"
+         for="toggle-zgqdxaqzoxrghfci"
          data-fr-checked-label="Activé"
          data-fr-unchecked-label="Désactivé">
     Interrupteur basique
@@ -1412,7 +1412,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 2
           </h3>
           <div class="fr-my-2w">
             
@@ -1424,11 +1424,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-lvjiywozxhtetlwh">
-    Données d’exemple
+          aria-controls="accordion-zxjmewqetadfhoqz">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-lvjiywozxhtetlwh">
+  <div class="fr-collapse" id="accordion-zxjmewqetadfhoqz">
     <pre class="dsfr-code">{'help_text': 'Vous ne pouvez pas utiliser cet interrupteur.',
  'is_disabled': True,
  'label': 'Interrupteur basique désactivé avec aide'}</pre>
@@ -1439,9 +1439,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 
@@ -1450,16 +1447,16 @@ p code, li code {
   <input type="checkbox"
          disabled
          class="fr-toggle__input"
-         aria-describedby="toggle-ffubstoqqflcuhyy-hint-text"
-         id="toggle-ffubstoqqflcuhyy">
+         aria-describedby="toggle-nvvcimmuddojmrpd-hint-text"
+         id="toggle-nvvcimmuddojmrpd">
   <label class="fr-toggle__label"
-         for="toggle-ffubstoqqflcuhyy"
+         for="toggle-nvvcimmuddojmrpd"
          data-fr-checked-label="Activé"
          data-fr-unchecked-label="Désactivé">
     Interrupteur basique désactivé avec aide
   </label>
   
-    <p class="fr-hint-text" id="toggle-ffubstoqqflcuhyy-hint-text">
+    <p class="fr-hint-text" id="toggle-nvvcimmuddojmrpd-hint-text">
       Vous ne pouvez pas utiliser cet interrupteur.
     </p>
   
@@ -1468,7 +1465,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 3
           </h3>
           <div class="fr-my-2w">
             
@@ -1480,11 +1477,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-icjgggshelnvicnt">
-    Données d’exemple
+          aria-controls="accordion-fpikkwlutqakydhz">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-icjgggshelnvicnt">
+  <div class="fr-collapse" id="accordion-fpikkwlutqakydhz">
     <pre class="dsfr-code">{'extra_classes': 'fr-toggle--label-left fr-toggle--border-bottom',
  'help_text': 'Cet interrupteur présente toutes les options disponibles',
  'id': 'toggle-full',
@@ -1497,9 +1494,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 
@@ -1653,6 +1647,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -1664,12 +1660,12 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="cvrN1RLI6UkddJUH6TYDAQ=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="Yg2olfU9ASpPCQ5CpgpZgA=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="cvrN1RLI6UkddJUH6TYDAQ=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="Yg2olfU9ASpPCQ5CpgpZgA=="></script>
 
 
     

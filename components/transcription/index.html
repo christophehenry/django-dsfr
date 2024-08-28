@@ -10,7 +10,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -51,10 +51,11 @@
       font-family: monospace;
       font-size: 1rem;
     }
-p code, li code {
-  background: var(--background-alt-grey);
-  padding: 0.2em;
-}
+
+    p code, li code {
+      background: var(--background-alt-grey);
+      padding: 0.2em;
+    }
   </style>
 
 
@@ -171,7 +172,9 @@ p code, li code {
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -287,9 +290,9 @@ p code, li code {
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -376,9 +379,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -465,9 +468,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -554,9 +557,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -1354,7 +1357,7 @@ p code, li code {
         </h2>
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 1
           </h3>
           <div class="fr-my-2w">
             
@@ -1366,11 +1369,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-jszuifueoaymuvvf">
-    Données d’exemple
+          aria-controls="accordion-ubphabnnykjjkpcy">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-jszuifueoaymuvvf">
+  <div class="fr-collapse" id="accordion-ubphabnnykjjkpcy">
     <pre class="dsfr-code">{'content': '<div><p>Courte transcription basique</p></div>'}</pre>
   </div>
 </section>
@@ -1379,34 +1382,31 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 
 <div class="fr-transcription">
   <button class="fr-transcription__btn"
           aria-expanded="false"
-          aria-controls="fr-transcription__collapse-transcription-kpscoefniyjzvvlh">
+          aria-controls="fr-transcription__collapse-transcription-isvcfzzzevxmkkld">
     Transcription
   </button>
-  <div class="fr-collapse" id="fr-transcription__collapse-transcription-kpscoefniyjzvvlh">
+  <div class="fr-collapse" id="fr-transcription__collapse-transcription-isvcfzzzevxmkkld">
     <div class="fr-transcription__footer">
       <div class="fr-transcription__actions-group">
         
         <button class="fr-btn fr-btn--fullscreen"
-                aria-controls="fr-transcription-modal-transcription-kpscoefniyjzvvlh"
+                aria-controls="fr-transcription-modal-transcription-isvcfzzzevxmkkld"
                 data-fr-opened="false"
                 title="Agrandir">
           Agrandir
         </button>
       </div>
     </div>
-    <dialog id="fr-transcription-modal-transcription-kpscoefniyjzvvlh"
+    <dialog id="fr-transcription-modal-transcription-isvcfzzzevxmkkld"
             class="fr-modal"
             role="dialog"
-            aria-labelledby="fr-transcription-modal-transcription-kpscoefniyjzvvlh-title">
+            aria-labelledby="fr-transcription-modal-transcription-isvcfzzzevxmkkld-title">
       <div class="fr-container fr-container--fluid fr-container-md">
         <div class="fr-grid-row fr-grid-row--center">
           <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
@@ -1414,13 +1414,13 @@ p code, li code {
               <div class="fr-modal__header">
                 
                 <button class="fr-btn--close fr-btn"
-                        aria-controls="fr-transcription-modal-transcription-kpscoefniyjzvvlh"
+                        aria-controls="fr-transcription-modal-transcription-isvcfzzzevxmkkld"
                         title="Fermer">
                   Fermer
                 </button>
               </div>
               <div class="fr-modal__content">
-                <h1 id="fr-transcription-modal-transcription-kpscoefniyjzvvlh-title"
+                <h1 id="fr-transcription-modal-transcription-isvcfzzzevxmkkld-title"
                     class="fr-modal__title">
                   Transcription
                 </h1>
@@ -1437,7 +1437,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 2
           </h3>
           <div class="fr-my-2w">
             
@@ -1449,11 +1449,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-tkwxqpgfxgamlhxo">
-    Données d’exemple
+          aria-controls="accordion-zmfwkleocghcvevk">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-tkwxqpgfxgamlhxo">
+  <div class="fr-collapse" id="accordion-zmfwkleocghcvevk">
     <pre class="dsfr-code">{'content': '<div>\n'
             '<p class="fr-mb-2w">\n'
             '    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed '
@@ -1561,34 +1561,31 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 
 <div class="fr-transcription">
   <button class="fr-transcription__btn"
           aria-expanded="false"
-          aria-controls="fr-transcription__collapse-transcription-noydowvaodmtzisc">
+          aria-controls="fr-transcription__collapse-transcription-vdkoskxvakyuciwu">
     Transcription
   </button>
-  <div class="fr-collapse" id="fr-transcription__collapse-transcription-noydowvaodmtzisc">
+  <div class="fr-collapse" id="fr-transcription__collapse-transcription-vdkoskxvakyuciwu">
     <div class="fr-transcription__footer">
       <div class="fr-transcription__actions-group">
         
         <button class="fr-btn fr-btn--fullscreen"
-                aria-controls="fr-transcription-modal-transcription-noydowvaodmtzisc"
+                aria-controls="fr-transcription-modal-transcription-vdkoskxvakyuciwu"
                 data-fr-opened="false"
                 title="Agrandir">
           Agrandir
         </button>
       </div>
     </div>
-    <dialog id="fr-transcription-modal-transcription-noydowvaodmtzisc"
+    <dialog id="fr-transcription-modal-transcription-vdkoskxvakyuciwu"
             class="fr-modal"
             role="dialog"
-            aria-labelledby="fr-transcription-modal-transcription-noydowvaodmtzisc-title">
+            aria-labelledby="fr-transcription-modal-transcription-vdkoskxvakyuciwu-title">
       <div class="fr-container fr-container--fluid fr-container-md">
         <div class="fr-grid-row fr-grid-row--center">
           <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
@@ -1596,13 +1593,13 @@ p code, li code {
               <div class="fr-modal__header">
                 
                 <button class="fr-btn--close fr-btn"
-                        aria-controls="fr-transcription-modal-transcription-noydowvaodmtzisc"
+                        aria-controls="fr-transcription-modal-transcription-vdkoskxvakyuciwu"
                         title="Fermer">
                   Fermer
                 </button>
               </div>
               <div class="fr-modal__content">
-                <h1 id="fr-transcription-modal-transcription-noydowvaodmtzisc-title"
+                <h1 id="fr-transcription-modal-transcription-vdkoskxvakyuciwu-title"
                     class="fr-modal__title">
                   Transcription très longue
                 </h1>
@@ -1804,6 +1801,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -1815,12 +1814,12 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="ueE+r8wrQDEnVIR5JCl87g=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="KDabk882I7JMZaj/sdZ42A=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="ueE+r8wrQDEnVIR5JCl87g=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="KDabk882I7JMZaj/sdZ42A=="></script>
 
 
     

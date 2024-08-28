@@ -10,7 +10,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -51,10 +51,11 @@
       font-family: monospace;
       font-size: 1rem;
     }
-p code, li code {
-  background: var(--background-alt-grey);
-  padding: 0.2em;
-}
+
+    p code, li code {
+      background: var(--background-alt-grey);
+      padding: 0.2em;
+    }
   </style>
 
 
@@ -171,7 +172,9 @@ p code, li code {
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -287,9 +290,9 @@ p code, li code {
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -376,9 +379,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -465,9 +468,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -554,9 +557,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -1367,7 +1370,7 @@ p code, li code {
         </h2>
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 1
           </h3>
           <div class="fr-my-2w">
             
@@ -1379,11 +1382,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-hgfimwvayykzjvgm">
-    Données d’exemple
+          aria-controls="accordion-maralnnbwpmojspb">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-hgfimwvayykzjvgm">
+  <div class="fr-collapse" id="accordion-maralnnbwpmojspb">
     <pre class="dsfr-code">{'label': 'Bouton principal',
  'onclick': "alert('Vous avez cliqué sur le bouton principal')"}</pre>
   </div>
@@ -1393,9 +1396,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <button class="fr-btn"
         onclick="alert(&#x27;Vous avez cliqué sur le bouton principal&#x27;)"
@@ -1408,7 +1408,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 2
           </h3>
           <div class="fr-my-2w">
             
@@ -1420,11 +1420,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-kbwnfvbtrmmcrmxy">
-    Données d’exemple
+          aria-controls="accordion-bsngzhzvacvdfjoa">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-kbwnfvbtrmmcrmxy">
+  <div class="fr-collapse" id="accordion-bsngzhzvacvdfjoa">
     <pre class="dsfr-code">{'extra_classes': 'fr-btn--secondary',
  'label': 'Bouton secondaire',
  'name': 'secundary-button',
@@ -1437,9 +1437,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <button class="fr-btn fr-btn--secondary"
         onclick="alert(&#x27;Vous avez cliqué sur le bouton secondaire&#x27;)"
@@ -1452,7 +1449,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 3
           </h3>
           <div class="fr-my-2w">
             
@@ -1464,11 +1461,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-dfqqlekgzspmdymz">
-    Données d’exemple
+          aria-controls="accordion-umydwzvnlnjijumq">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-dfqqlekgzspmdymz">
+  <div class="fr-collapse" id="accordion-umydwzvnlnjijumq">
     <pre class="dsfr-code">{'extra_classes': 'fr-btn--tertiary',
  'label': 'Bouton tertiaire',
  'onclick': "alert('Vous avez cliqué sur le bouton tertiaire')"}</pre>
@@ -1479,9 +1476,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <button class="fr-btn fr-btn--tertiary"
         onclick="alert(&#x27;Vous avez cliqué sur le bouton tertiaire&#x27;)"
@@ -1494,7 +1488,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 4
           </h3>
           <div class="fr-my-2w">
             
@@ -1506,11 +1500,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-tvnvfhzcracvuduf">
-    Données d’exemple
+          aria-controls="accordion-xbnvjenukshoogog">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-tvnvfhzcracvuduf">
+  <div class="fr-collapse" id="accordion-xbnvjenukshoogog">
     <pre class="dsfr-code">{'extra_classes': 'fr-btn--tertiary-no-outline',
  'label': 'Bouton tertiaire sans bordure',
  'onclick': "alert('Vous avez cliqué sur le bouton tertiaire sans bordure')",
@@ -1522,9 +1516,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <button class="fr-btn fr-btn--tertiary-no-outline"
         onclick="alert(&#x27;Vous avez cliqué sur le bouton tertiaire sans bordure&#x27;)"
@@ -1664,6 +1655,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -1675,12 +1668,12 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="ZXLBS9D0h3MG/cz/tv6Erg=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="ihAxqGs8k9xxrVEI8yBzNg=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="ZXLBS9D0h3MG/cz/tv6Erg=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="ihAxqGs8k9xxrVEI8yBzNg=="></script>
 
 
     

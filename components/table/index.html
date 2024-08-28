@@ -10,7 +10,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -51,10 +51,11 @@
       font-family: monospace;
       font-size: 1rem;
     }
-p code, li code {
-  background: var(--background-alt-grey);
-  padding: 0.2em;
-}
+
+    p code, li code {
+      background: var(--background-alt-grey);
+      padding: 0.2em;
+    }
   </style>
 
 
@@ -171,7 +172,9 @@ p code, li code {
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -287,9 +290,9 @@ p code, li code {
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -376,9 +379,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -465,9 +468,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -554,9 +557,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -1347,12 +1350,9 @@ p code, li code {
 <p>All of the keys of the dict can be passed directly as named parameters of the tag.</p>
 <p>Relevant <code>extra_classes</code>:</p>
 <ul>
-<li>Color classes (<a href="/django-dsfr/resources/colors">See the list</a>), for example <code>fr-table--green-emeraude</code></li>
-<li><code>fr-table--bordered</code>: adds a border under each line</li>
+<li>Size classes: <code>fr-table--sm</code>, <code>fr-table--lg</code> (no class for normal sized tables)</li>
+<li><code>fr-table--bordered</code>: adds a vertical border between each column</li>
 <li><code>fr-table--no-scroll</code> prevents horizontal scrolling on mobile</li>
-<li><code>fr-table--layout-fixed</code>: forces the table at 100% and equal size columns</li>
-<li><code>fr-table--no-caption</code>: hides the caption</li>
-<li><code>fr-table--caption-bottom</code>: sets the caption after the table instead of before</li>
 </ul>
 <p><strong>Tag name</strong>:
     dsfr_table</p>
@@ -1364,7 +1364,7 @@ p code, li code {
         </h2>
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 1
           </h3>
           <div class="fr-my-2w">
             
@@ -1376,13 +1376,14 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-umspsmtlidhowehx">
-    Données d’exemple
+          aria-controls="accordion-wchgscfotlfswpot">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-umspsmtlidhowehx">
+  <div class="fr-collapse" id="accordion-wchgscfotlfswpot">
     <pre class="dsfr-code">{'caption': 'Tableau basique',
  'content': [['a', 'b', 'c'], ['d', 'e', 'f']],
+ 'extra_classes': 'fr-table--sm',
  'header': ['Colonne 1', 'Colonne 2', 'Colonne 3']}</pre>
   </div>
 </section>
@@ -1391,74 +1392,77 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
-            <div class="fr-table">
-  <table>
-    <caption>Tableau basique</caption>
-    
-      <thead>
-        <tr>
+            <div class="fr-table fr-table--sm">
+  <div class="fr-table__wrapper">
+    <div class="fr-table__container">
+      <div class="fr-table__content">
+        <table>
+          <caption>Tableau basique</caption>
           
-            <th scope="col">
-              Colonne 1
-            </th>
+            <thead>
+              <tr>
+                
+                  <th scope="col">
+                    Colonne 1
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 2
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 3
+                  </th>
+                
+              </tr>
+            </thead>
           
-            <th scope="col">
-              Colonne 2
-            </th>
-          
-            <th scope="col">
-              Colonne 3
-            </th>
-          
-        </tr>
-      </thead>
-    
-    <tbody>
-      
-        <tr>
-          
-            <td>
-              a
-            </td>
-          
-            <td>
-              b
-            </td>
-          
-            <td>
-              c
-            </td>
-          
-        </tr>
-      
-        <tr>
-          
-            <td>
-              d
-            </td>
-          
-            <td>
-              e
-            </td>
-          
-            <td>
-              f
-            </td>
-          
-        </tr>
-      
-    </tbody>
-  </table>
+          <tbody>
+            
+              <tr>
+                
+                  <td>
+                    a
+                  </td>
+                
+                  <td>
+                    b
+                  </td>
+                
+                  <td>
+                    c
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                
+                  <td>
+                    d
+                  </td>
+                
+                  <td>
+                    e
+                  </td>
+                
+                  <td>
+                    f
+                  </td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 2
           </h3>
           <div class="fr-my-2w">
             
@@ -1470,12 +1474,12 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-pkalnvueichamcyo">
-    Données d’exemple
+          aria-controls="accordion-ruzqghulqfluslos">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-pkalnvueichamcyo">
-    <pre class="dsfr-code">{'caption': 'Tableau vert',
+  <div class="fr-collapse" id="accordion-ruzqghulqfluslos">
+    <pre class="dsfr-code">{'caption': 'Tableau avec bordure',
  'content': [['Lorem ipsum dolor sit amet',
               'consectetur adipiscing elit',
               'sed do eiusmod tempor incididunt ut',
@@ -1488,7 +1492,7 @@ p code, li code {
               'Aliquam purus sit amet luctus venenatis lectus',
               'Pellentesque id nibh tortor id aliquet lectus proin',
               2]],
- 'extra_classes': 'fr-table--green-emeraude fr-table--bordered',
+ 'extra_classes': 'fr-table--bordered',
  'header': ['Colonne 1',
             'Colonne 2',
             'Colonne 3',
@@ -1502,104 +1506,257 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
+          
+            <div class="fr-table fr-table--bordered">
+  <div class="fr-table__wrapper">
+    <div class="fr-table__container">
+      <div class="fr-table__content">
+        <table>
+          <caption>Tableau avec bordure</caption>
+          
+            <thead>
+              <tr>
+                
+                  <th scope="col">
+                    Colonne 1
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 2
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 3
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 4
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 5
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 6
+                  </th>
+                
+              </tr>
+            </thead>
+          
+          <tbody>
+            
+              <tr>
+                
+                  <td>
+                    Lorem ipsum dolor sit amet
+                  </td>
+                
+                  <td>
+                    consectetur adipiscing elit
+                  </td>
+                
+                  <td>
+                    sed do eiusmod tempor incididunt ut
+                  </td>
+                
+                  <td>
+                    labore et dolore magna aliqua
+                  </td>
+                
+                  <td>
+                    At quis risus sed vulputate odio ut enim
+                  </td>
+                
+                  <td>
+                    100.0
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                
+                  <td>
+                    At risus viverra
+                  </td>
+                
+                  <td>
+                    adipiscing at in tellus
+                  </td>
+                
+                  <td>
+                    integer feugiat
+                  </td>
+                
+                  <td>
+                    Aliquam purus sit amet luctus venenatis lectus
+                  </td>
+                
+                  <td>
+                    Pellentesque id nibh tortor id aliquet lectus proin
+                  </td>
+                
+                  <td>
+                    2
+                  </td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+        
+          <h3 class="fr-mt-3w">
+            Exemple 3
           </h3>
+          <div class="fr-my-2w">
+            
+            
+              
+              
+                <section class="fr-accordion">
+  <h3 class="fr-accordion__title">
+  <button type="button"
+          class="fr-accordion__btn"
+          aria-expanded="false"
+          aria-controls="accordion-fntqpqgpvbrnhejv">
+    Données de l’exemple
+  </button>
+  </h3>
+  <div class="fr-collapse" id="accordion-fntqpqgpvbrnhejv">
+    <pre class="dsfr-code">{'caption': 'Tableau non-scrollable',
+ 'content': [['Lorem ipsum dolor sit amet',
+              'consectetur adipiscing elit',
+              'sed do eiusmod tempor incididunt ut',
+              'labore et dolore magna aliqua',
+              'At quis risus sed vulputate odio ut enim',
+              100.0],
+             ['At risus viverra',
+              'adipiscing at in tellus',
+              'integer feugiat',
+              'Aliquam purus sit amet luctus venenatis lectus',
+              'Pellentesque id nibh tortor id aliquet lectus proin',
+              2]],
+ 'extra_classes': 'fr-table--no-scroll fr-table--bordered',
+ 'header': ['Colonne 1',
+            'Colonne 2',
+            'Colonne 3',
+            'Colonne 4',
+            'Colonne 5',
+            'Colonne 6']}</pre>
+  </div>
+</section>
+
+              
+            
+            
+          </div>
           
-            <div class="fr-table fr-table--green-emeraude fr-table--bordered">
-  <table>
-    <caption>Tableau vert</caption>
-    
-      <thead>
-        <tr>
+            <div class="fr-table fr-table--no-scroll fr-table--bordered">
+  <div class="fr-table__wrapper">
+    <div class="fr-table__container">
+      <div class="fr-table__content">
+        <table>
+          <caption>Tableau non-scrollable</caption>
           
-            <th scope="col">
-              Colonne 1
-            </th>
+            <thead>
+              <tr>
+                
+                  <th scope="col">
+                    Colonne 1
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 2
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 3
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 4
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 5
+                  </th>
+                
+                  <th scope="col">
+                    Colonne 6
+                  </th>
+                
+              </tr>
+            </thead>
           
-            <th scope="col">
-              Colonne 2
-            </th>
-          
-            <th scope="col">
-              Colonne 3
-            </th>
-          
-            <th scope="col">
-              Colonne 4
-            </th>
-          
-            <th scope="col">
-              Colonne 5
-            </th>
-          
-            <th scope="col">
-              Colonne 6
-            </th>
-          
-        </tr>
-      </thead>
-    
-    <tbody>
-      
-        <tr>
-          
-            <td>
-              Lorem ipsum dolor sit amet
-            </td>
-          
-            <td>
-              consectetur adipiscing elit
-            </td>
-          
-            <td>
-              sed do eiusmod tempor incididunt ut
-            </td>
-          
-            <td>
-              labore et dolore magna aliqua
-            </td>
-          
-            <td>
-              At quis risus sed vulputate odio ut enim
-            </td>
-          
-            <td>
-              100.0
-            </td>
-          
-        </tr>
-      
-        <tr>
-          
-            <td>
-              At risus viverra
-            </td>
-          
-            <td>
-              adipiscing at in tellus
-            </td>
-          
-            <td>
-              integer feugiat
-            </td>
-          
-            <td>
-              Aliquam purus sit amet luctus venenatis lectus
-            </td>
-          
-            <td>
-              Pellentesque id nibh tortor id aliquet lectus proin
-            </td>
-          
-            <td>
-              2
-            </td>
-          
-        </tr>
-      
-    </tbody>
-  </table>
+          <tbody>
+            
+              <tr>
+                
+                  <td>
+                    Lorem ipsum dolor sit amet
+                  </td>
+                
+                  <td>
+                    consectetur adipiscing elit
+                  </td>
+                
+                  <td>
+                    sed do eiusmod tempor incididunt ut
+                  </td>
+                
+                  <td>
+                    labore et dolore magna aliqua
+                  </td>
+                
+                  <td>
+                    At quis risus sed vulputate odio ut enim
+                  </td>
+                
+                  <td>
+                    100.0
+                  </td>
+                
+              </tr>
+            
+              <tr>
+                
+                  <td>
+                    At risus viverra
+                  </td>
+                
+                  <td>
+                    adipiscing at in tellus
+                  </td>
+                
+                  <td>
+                    integer feugiat
+                  </td>
+                
+                  <td>
+                    Aliquam purus sit amet luctus venenatis lectus
+                  </td>
+                
+                  <td>
+                    Pellentesque id nibh tortor id aliquet lectus proin
+                  </td>
+                
+                  <td>
+                    2
+                  </td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 
           
@@ -1732,6 +1889,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -1743,12 +1902,12 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="Y4fYJeoLUrO1ivAxwoLr3g=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="vKGamehqDSlOPJsnLnRL6g=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="Y4fYJeoLUrO1ivAxwoLr3g=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="vKGamehqDSlOPJsnLnRL6g=="></script>
 
 
     

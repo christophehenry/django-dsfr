@@ -10,7 +10,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -155,7 +155,9 @@
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -271,9 +273,9 @@
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -360,9 +362,9 @@
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -449,9 +451,9 @@
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -538,9 +540,9 @@
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -839,7 +841,7 @@
     Cartes et tuiles
   </h2>
   <p>
-    Les cartes et tuiles peuvent prendre un fond gris à la place de la couleur par défaut.
+    Les cartes et tuiles peuvent prendre un fond gris à la place de la couleur par défaut, respectivement avec les classes <code>fr-card--grey</code> et <code>fr-tile--grey</code>.
   </p>
   <div class="fr-grid-row fr-grid-row--gutters fr-mb-4w">
     <div class="fr-col-12 fr-col-md-6">
@@ -1021,6 +1023,92 @@
 
     </div>
   </div>
+
+  <h2>
+    Couleurs de fond
+  </h2>
+  <form class="fr-mb-4w">
+    <div class="fr-select-group">
+  <label for="id_color_full" class="fr-label">
+    Choisissez une couleur
+    
+  </label>
+  
+    <select name="color_full" class="fr-select" id="id_color_full">
+  <option value="" selected>----</option>
+
+  <optgroup label="Couleurs primaires">
+  <option value="blue-france">Bleu France</option>
+
+  <option value="red-marianne">Rouge Marianne</option>
+
+  </optgroup>
+  <optgroup label="Couleurs neutres">
+  <option value="grey">Gris</option>
+
+  </optgroup>
+  <optgroup label="Couleurs illustratives">
+  <option value="green-tilleul-verveine">Tilleul verveine</option>
+
+  <option value="green-bourgeon">Bourgeon</option>
+
+  <option value="green-emeraude">Émeraude</option>
+
+  <option value="green-menthe">Menthe</option>
+
+  <option value="green-archipel">Archipel</option>
+
+  <option value="blue-ecume">Écume</option>
+
+  <option value="blue-cumulus">Cumulus</option>
+
+  <option value="purple-glycine">Glycine</option>
+
+  <option value="pink-macaron">Macaron</option>
+
+  <option value="pink-tuile">Tuile</option>
+
+  <option value="yellow-tournesol">Tournesol</option>
+
+  <option value="yellow-moutarde">Moutarde</option>
+
+  <option value="orange-terre-battue">Terre battue</option>
+
+  <option value="brown-cafe-creme">Café crème</option>
+
+  <option value="brown-caramel">Caramel</option>
+
+  <option value="brown-opera">Opéra</option>
+
+  <option value="beige-gris-galet">Gris galet</option>
+
+  </optgroup>
+</select>
+  
+  
+</div>
+  </form>
+  <p>
+    Il est possible de changer la couleur de fond d’un paragraphe ou d’une div. Les couleurs primaires, neutres et illustratives sont prises en compte.
+  </p>
+
+  <p>
+    Il faut utiliser une classe de type <code>fr-background-alt--&lt;color-name&gt;</code> (par exemple, <code>fr-background-alt--green-archipel</code>.)
+  </p>
+
+  <div class="fr-background-alt fr-px-2w fr-pt-2w fr-pb-2v fr-mb-2w">
+    
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Optio tempore atque quis nulla repellat dolores quibusdam temporibus laborum velit rerum aliquam amet recusandae consectetur voluptas,
+      quasi asperiores veniam excepturi ipsam.
+    </p>
+    <p>
+      Totam harum magni quis laudantium esse? Quod, tenetur nobis ab nostrum minus rerum magnam? Tempora provident distinctio fugit sunt, rem magni harum?
+      Minus explicabo repudiandae placeat suscipit! Earum provident facere, unde quam recusandae cumque neque quas porro dolor a natus labore delectus vel necessitatibus.
+    </p>
+  </div>
+
   <h2>
     Couleurs d’accentuation
   </h2>
@@ -1028,20 +1116,13 @@
     Certains composants prennent une couleur d’accentuation comme paramètre. Seules les couleurs illustratives sont prises en compte.
   </p>
   <form class="fr-mb-4w">
-    
-
-
-  
-
-  
-
-<div class="fr-select-group">
-  <label for="id_color" class="fr-label">
+    <div class="fr-select-group">
+  <label for="id_color_accent" class="fr-label">
     Choisissez une couleur
     
   </label>
   
-    <select name="color" class="fr-select" id="id_color">
+    <select name="color_accent" class="fr-select" id="id_color_accent">
   <option value="" selected>----</option>
 
   <option value="green-tilleul-verveine">Tilleul verveine</option>
@@ -1082,10 +1163,6 @@
   
   
 </div>
-
-
-
-
   </form>
   <div class="example-use">
     <h3>
@@ -1094,53 +1171,33 @@
     <p>
       Personnalise la couleur de l’icône.
     </p>
+    <p>
+      Il faut utiliser une classe de type <code>fr-quote--&lt;color-name&gt;</code> (par exemple, <code>fr-quote--green-archipel</code>.)
+    </p>
     
 
-<figure class="fr-quote fr-quote--column fr-quote--green-emeraude">
-  <blockquote cite="https://www.systeme-de-design.gouv.fr/">
+<figure class="fr-quote fr-quote--column">
+  <blockquote >
     <p>
-      Développer vos sites et applications en utilisant des composants prêts à l’emploi, accessibles et ergonomiques
+      Citation très basique, sans aucun des champs optionnels.
     </p>
   </blockquote>
   <figcaption>
     
-      <p class="fr-quote__author">
-        Auteur
-      </p>
     
-    
-      <ul class="fr-quote__source">
-        <li>
-          <cite>Système de Design de l&#x27;État</cite>
-        </li>
-        
-          
-            <li>
-              Détail sans lien
-            </li>
-          
-        
-          
-            <li>
-              <a target="_blank" rel="noopener noreferrer" href="https://template.incubateur.net/">Détail avec lien <span class="fr-sr-only">Ouvre une nouvelle fenêtre</span></a>
-            </li>
-          
-        
-      </ul>
-    
-    
-      <div class="fr-quote__image">
-        <img src="/django-dsfr/static/img/placeholder.1x1.svg" class="fr-responsive-img" alt="" />
-      </div>
     
   </figcaption>
 </figure>
+
 
     <h3>
       Mise en avant
     </h3>
     <p>
       Personnalise la couleur du fond et de la bordure.
+    </p>
+    <p>
+      Il faut utiliser une classe de type <code>fr-callout--&lt;color-name&gt;</code> (par exemple, <code>fr-callout--green-archipel</code>.)
     </p>
     
 <div class="fr-callout fr-icon-alert-line">
@@ -1166,11 +1223,15 @@
   
 </div>
 
+
     <h3>
       Mise en exergue
     </h3>
     <p>
       Personnalise la couleur de la bordure.
+    </p>
+    <p>
+      Il faut utiliser une classe de type <code>fr-highlight--&lt;color-name&gt;</code> (par exemple, <code>fr-highlight--green-archipel</code>.)
     </p>
     <div class="fr-highlight">
   <p class="fr-text--sm">
@@ -1178,77 +1239,15 @@
   </p>
 </div>
 
-    <h3>
-      Tableau
-    </h3>
-    <p>
-      Personnalise la couleur de la bordure et du fond.
-    </p>
-    <div class="fr-table">
-  <table>
-    <caption>Tableau basique</caption>
-    
-      <thead>
-        <tr>
-          
-            <th scope="col">
-              Colonne 1
-            </th>
-          
-            <th scope="col">
-              Colonne 2
-            </th>
-          
-            <th scope="col">
-              Colonne 3
-            </th>
-          
-        </tr>
-      </thead>
-    
-    <tbody>
-      
-        <tr>
-          
-            <td>
-              a
-            </td>
-          
-            <td>
-              b
-            </td>
-          
-            <td>
-              c
-            </td>
-          
-        </tr>
-      
-        <tr>
-          
-            <td>
-              d
-            </td>
-          
-            <td>
-              e
-            </td>
-          
-            <td>
-              f
-            </td>
-          
-        </tr>
-      
-    </tbody>
-  </table>
-</div>
 
     <h3>
       Tag
     </h3>
     <p>
       Personnalise la couleur de la bordure, du fond et de l’icône. Seuls les tags cliquables sont pris en compte.
+    </p>
+    <p>
+      Il faut utiliser une classe de type <code>fr-tag--&lt;color-name&gt;</code> (par exemple, <code>fr-tag--green-archipel</code>.)
     </p>
     <ul class="fr-tags-group">
       <li>
@@ -1391,6 +1390,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -1402,17 +1403,20 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="TlOicA/3MTAmQlommcbH0A=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="Lj04i16W4oGPMwEdZVp2BA=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="TlOicA/3MTAmQlommcbH0A=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="Lj04i16W4oGPMwEdZVp2BA=="></script>
 
 
     
   <script>
     const colors_list = [
+      "blue-france",
+      "red-marianne",
+      "grey",
       "green-tilleul-verveine",
       "green-bourgeon",
       "green-emeraude",
@@ -1450,14 +1454,18 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
       }
     }
 
-
-    document.getElementById('id_color').addEventListener('input', function (event) {
+    document.getElementById('id_color_accent').addEventListener('input', function (event) {
       manageColorClasses("fr-quote", event.target.value);
       manageColorClasses("fr-callout", event.target.value);
       manageColorClasses("fr-highlight", event.target.value);
-      manageColorClasses("fr-table", event.target.value);
       manageColorClasses("fr-tag", event.target.value);
     }, false);
+
+    document.getElementById('id_color_full').addEventListener('input', function (event) {
+      console.log("here");
+      manageColorClasses("fr-background-alt", event.target.value);
+    }, false);
+
   </script>
 
   </body>

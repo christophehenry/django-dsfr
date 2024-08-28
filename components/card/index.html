@@ -10,7 +10,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -51,10 +51,11 @@
       font-family: monospace;
       font-size: 1rem;
     }
-p code, li code {
-  background: var(--background-alt-grey);
-  padding: 0.2em;
-}
+
+    p code, li code {
+      background: var(--background-alt-grey);
+      padding: 0.2em;
+    }
   </style>
 
 
@@ -171,7 +172,9 @@ p code, li code {
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -287,9 +290,9 @@ p code, li code {
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -376,9 +379,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -465,9 +468,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -554,9 +557,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -1406,7 +1409,7 @@ p code, li code {
         </h2>
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 1
           </h3>
           <div class="fr-my-2w">
             
@@ -1418,11 +1421,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-kqldqkccgiqaczij">
-    Données d’exemple
+          aria-controls="accordion-lpwgdskvdaaxwjmi">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-kqldqkccgiqaczij">
+  <div class="fr-collapse" id="accordion-lpwgdskvdaaxwjmi">
     <pre class="dsfr-code">{'description': 'Texte de la carte.\n'
                 '                    Il peut prendre jusqu’à 200 caractères, '
                 'ce qui devrait correspondre\n'
@@ -1440,9 +1443,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -1491,7 +1491,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 2
           </h3>
           <div class="fr-my-2w">
             
@@ -1503,11 +1503,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-dtytwtynrstabbcw">
-    Données d’exemple
+          aria-controls="accordion-xuroppiisizuwcxf">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-dtytwtynrstabbcw">
+  <div class="fr-collapse" id="accordion-xuroppiisizuwcxf">
     <pre class="dsfr-code">{'description': 'Texte de la carte.\n'
                 '                    Il peut prendre jusqu’à 200 caractères, '
                 'ce qui devrait correspondre\n'
@@ -1526,9 +1526,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -1575,7 +1572,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 3
           </h3>
           <div class="fr-my-2w">
             
@@ -1587,11 +1584,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-cuivaeqxpocpfain">
-    Données d’exemple
+          aria-controls="accordion-ylcsorpnrzylbgps">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-cuivaeqxpocpfain">
+  <div class="fr-collapse" id="accordion-ylcsorpnrzylbgps">
     <pre class="dsfr-code">{'description': 'Texte de la carte.\n'
                 '                    Il peut prendre jusqu’à 200 caractères, '
                 'ce qui devrait correspondre\n'
@@ -1610,9 +1607,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -1659,7 +1653,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 4
           </h3>
           <div class="fr-my-2w">
             
@@ -1671,11 +1665,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-svhpznqwcewgekti">
-    Données d’exemple
+          aria-controls="accordion-kfntnublnmdcaici">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-svhpznqwcewgekti">
+  <div class="fr-collapse" id="accordion-kfntnublnmdcaici">
     <pre class="dsfr-code">{'description': 'Texte de la carte.\n'
                 '                    Il peut prendre jusqu’à 200 caractères, '
                 'ce qui devrait correspondre\n'
@@ -1694,9 +1688,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -1743,7 +1734,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 5
           </h3>
           <div class="fr-my-2w">
             
@@ -1755,11 +1746,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-xkyeulpqjhmqfhua">
-    Données d’exemple
+          aria-controls="accordion-bljgaxpbubeojopf">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-xkyeulpqjhmqfhua">
+  <div class="fr-collapse" id="accordion-bljgaxpbubeojopf">
     <pre class="dsfr-code">{'description': 'Texte de la carte.\n'
                 '                    Il peut prendre jusqu’à 200 caractères.\n'
                 '                    ',
@@ -1775,9 +1766,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -1836,7 +1824,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 6
           </h3>
           <div class="fr-my-2w">
             
@@ -1848,11 +1836,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-emlnqwrgabpkjjrh">
-    Données d’exemple
+          aria-controls="accordion-ijwhjykniqfqxlfr">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-emlnqwrgabpkjjrh">
+  <div class="fr-collapse" id="accordion-ijwhjykniqfqxlfr">
     <pre class="dsfr-code">{'description': 'Texte de la carte.\n'
                 '                    Il peut prendre jusqu’à 200 caractères.\n'
                 '                    ',
@@ -1870,9 +1858,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -1942,7 +1927,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 7
           </h3>
           <div class="fr-my-2w">
             
@@ -1954,11 +1939,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-ffaxmfyohesdmyob">
-    Données d’exemple
+          aria-controls="accordion-yvdtomqjvkhsmaza">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-ffaxmfyohesdmyob">
+  <div class="fr-collapse" id="accordion-yvdtomqjvkhsmaza">
     <pre class="dsfr-code">{'description': 'Texte de la carte.\n'
                 '                    Il peut prendre jusqu’à 200 caractères.\n'
                 '                    ',
@@ -1979,9 +1964,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -2056,7 +2038,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 8
           </h3>
           <div class="fr-my-2w">
             
@@ -2068,11 +2050,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-lifybwjobaamphbq">
-    Données d’exemple
+          aria-controls="accordion-aflcaknxubnxfsdo">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-lifybwjobaamphbq">
+  <div class="fr-collapse" id="accordion-aflcaknxubnxfsdo">
     <pre class="dsfr-code">{'bottom_detail': {'icon': 'fr-icon-warning-fill',
                    'text': 'Détail (optionnel)'},
  'description': 'Texte de la carte.\n'
@@ -2088,9 +2070,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -2137,7 +2116,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 9
           </h3>
           <div class="fr-my-2w">
             
@@ -2149,11 +2128,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-opsflhiysnnopart">
-    Données d’exemple
+          aria-controls="accordion-fcainprqrvrwjjai">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-opsflhiysnnopart">
+  <div class="fr-collapse" id="accordion-fcainprqrvrwjjai">
     <pre class="dsfr-code">{'call_to_action': {'buttons': [{'extra_classes': 'fr-btn--secondary',
                                  'label': 'Bouton 1'},
                                 {'label': 'Bouton 2'}]},
@@ -2173,9 +2152,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -2251,7 +2227,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 10
           </h3>
           <div class="fr-my-2w">
             
@@ -2263,11 +2239,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-xgdfrzazzqadpyzv">
-    Données d’exemple
+          aria-controls="accordion-gbisuexbfhoivhtc">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-xgdfrzazzqadpyzv">
+  <div class="fr-collapse" id="accordion-gbisuexbfhoivhtc">
     <pre class="dsfr-code">{'call_to_action': {'links': [{'label': 'Lien interne', 'url': '/'},
                               {'is_external': True,
                                'label': 'Lien externe',
@@ -2288,9 +2264,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -2368,7 +2341,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 11
           </h3>
           <div class="fr-my-2w">
             
@@ -2380,11 +2353,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-mzfisvxhpbzrljmz">
-    Données d’exemple
+          aria-controls="accordion-qcnjjoxqfujjcrfa">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-mzfisvxhpbzrljmz">
+  <div class="fr-collapse" id="accordion-qcnjjoxqfujjcrfa">
     <pre class="dsfr-code">{'description': 'Texte de la carte.\n'
                 '                    Il peut prendre jusqu’à 200 caractères, '
                 'ce qui devrait correspondre\n'
@@ -2403,9 +2376,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -2454,7 +2424,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 12
           </h3>
           <div class="fr-my-2w">
             
@@ -2466,11 +2436,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-ghgvnicnelvrywus">
-    Données d’exemple
+          aria-controls="accordion-gqpjuoldggcvfejk">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-ghgvnicnelvrywus">
+  <div class="fr-collapse" id="accordion-gqpjuoldggcvfejk">
     <pre class="dsfr-code">{'description': 'Peut être utile au besoin.',
  'enlarge_link': False,
  'extra_classes': 'fr-card--horizontal',
@@ -2483,9 +2453,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
               <div class="fr-grid-row fr-grid-row--gutters">
@@ -2652,6 +2619,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -2663,12 +2632,12 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="6lZ16FG9cAoTNIIeQdtcGw=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="ahHXJqXD5mrd4qNw9UQztQ=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="6lZ16FG9cAoTNIIeQdtcGw=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="ahHXJqXD5mrd4qNw9UQztQ=="></script>
 
 
     

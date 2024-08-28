@@ -10,7 +10,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -51,10 +51,11 @@
       font-family: monospace;
       font-size: 1rem;
     }
-p code, li code {
-  background: var(--background-alt-grey);
-  padding: 0.2em;
-}
+
+    p code, li code {
+      background: var(--background-alt-grey);
+      padding: 0.2em;
+    }
   </style>
 
 
@@ -171,7 +172,9 @@ p code, li code {
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -287,9 +290,9 @@ p code, li code {
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -376,9 +379,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -465,9 +468,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -554,9 +557,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -1381,7 +1384,7 @@ p code, li code {
         </h2>
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 1
           </h3>
           <div class="fr-my-2w">
             
@@ -1393,11 +1396,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-vdrhcqukosqhazgv">
-    Données d’exemple
+          aria-controls="accordion-sijlsilsfbqijyhb">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-vdrhcqukosqhazgv">
+  <div class="fr-collapse" id="accordion-sijlsilsfbqijyhb">
     <pre class="dsfr-code">{'image_path': '/django-dsfr/static/img/placeholder.1x1.svg',
  'title': 'Tuile basique (verticale, MD)',
  'url': '/'}</pre>
@@ -1408,9 +1411,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <div class="fr-grid-row fr-grid-row--gutters">
               <div class="fr-col-12">
@@ -1441,7 +1441,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 2
           </h3>
           <div class="fr-my-2w">
             
@@ -1453,11 +1453,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-vuftmjclbzsvvrgq">
-    Données d’exemple
+          aria-controls="accordion-sbkbvynlawcmukqw">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-vuftmjclbzsvvrgq">
+  <div class="fr-collapse" id="accordion-sbkbvynlawcmukqw">
     <pre class="dsfr-code">{'description': 'Tuile horizontale (MD)',
  'detail': 'Avec un pictogramme SVG',
  'extra_classes': 'fr-tile--horizontal',
@@ -1472,9 +1472,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <div class="fr-grid-row fr-grid-row--gutters">
               <div class="fr-col-12">
@@ -1521,7 +1518,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 3
           </h3>
           <div class="fr-my-2w">
             
@@ -1533,11 +1530,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-zlpciblovrydyyor">
-    Données d’exemple
+          aria-controls="accordion-zlzfoborjsldouxr">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-zlpciblovrydyyor">
+  <div class="fr-collapse" id="accordion-zlzfoborjsldouxr">
     <pre class="dsfr-code">{'extra_classes': 'fr-tile--sm',
  'id': 'tile-nuclear-plant',
  'svg_path': '/django-dsfr/static/dsfr/dist/artwork/pictograms/buildings/nuclear-plant.svg',
@@ -1550,9 +1547,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <div class="fr-grid-row fr-grid-row--gutters">
               <div class="fr-col-12">
@@ -1591,7 +1585,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 4
           </h3>
           <div class="fr-my-2w">
             
@@ -1603,11 +1597,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-sjfeduosaquvwatv">
-    Données d’exemple
+          aria-controls="accordion-dnqexxhfzowhqcoq">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-sjfeduosaquvwatv">
+  <div class="fr-collapse" id="accordion-dnqexxhfzowhqcoq">
     <pre class="dsfr-code">{'extra_classes': 'fr-tile--horizontal fr-tile--sm',
  'id': 'tile-map',
  'svg_path': '/django-dsfr/static/dsfr/dist/artwork/pictograms/map/map.svg',
@@ -1623,9 +1617,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <div class="fr-grid-row fr-grid-row--gutters">
               <div class="fr-col-12">
@@ -1679,7 +1670,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 5
           </h3>
           <div class="fr-my-2w">
             
@@ -1691,11 +1682,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-ltkkjuntyhlpyttl">
-    Données d’exemple
+          aria-controls="accordion-gxzfxtmgmqplhloe">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-ltkkjuntyhlpyttl">
+  <div class="fr-collapse" id="accordion-gxzfxtmgmqplhloe">
     <pre class="dsfr-code">{'extra_classes': 'fr-tile--horizontal fr-tile--grey fr-tile--shadow '
                   'fr-tile--no-border',
  'id': 'tile-map',
@@ -1709,9 +1700,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <div class="fr-grid-row fr-grid-row--gutters">
               <div class="fr-col-12">
@@ -1750,7 +1738,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 6
           </h3>
           <div class="fr-my-2w">
             
@@ -1762,11 +1750,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-mqpfcddgfzskvfmq">
-    Données d’exemple
+          aria-controls="accordion-mdomfdvrddpesnka">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-mqpfcddgfzskvfmq">
+  <div class="fr-collapse" id="accordion-mdomfdvrddpesnka">
     <pre class="dsfr-code">{'detail': 'PDF — 1,7 Mo',
  'extra_classes': 'fr-tile--horizontal fr-tile--download',
  'svg_path': '/django-dsfr/static/dsfr/dist/artwork/pictograms/document/document-signature.svg',
@@ -1779,9 +1767,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             <div class="fr-grid-row fr-grid-row--gutters">
               <div class="fr-col-12">
@@ -1951,6 +1936,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -1962,12 +1949,12 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="ITisk3inOZbP3irBiCj9sA=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="ifgmuczaklKdvM8p+LDqUQ=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="ITisk3inOZbP3irBiCj9sA=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="ifgmuczaklKdvM8p+LDqUQ=="></script>
 
 
     

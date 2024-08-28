@@ -10,7 +10,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -51,10 +51,11 @@
       font-family: monospace;
       font-size: 1rem;
     }
-p code, li code {
-  background: var(--background-alt-grey);
-  padding: 0.2em;
-}
+
+    p code, li code {
+      background: var(--background-alt-grey);
+      padding: 0.2em;
+    }
   </style>
 
 
@@ -171,7 +172,9 @@ p code, li code {
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -287,9 +290,9 @@ p code, li code {
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -376,9 +379,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -465,9 +468,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -554,9 +557,9 @@ p code, li code {
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -1392,7 +1395,7 @@ p code, li code {
         </h2>
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 1
           </h3>
           <div class="fr-my-2w">
             
@@ -1404,11 +1407,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-wbvamqrrhxzrfzxr">
-    Données d’exemple
+          aria-controls="accordion-jblvgskgbwbqfbkv">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-wbvamqrrhxzrfzxr">
+  <div class="fr-collapse" id="accordion-jblvgskgbwbqfbkv">
     <pre class="dsfr-code">{'alt_text': 'Silhouette stylisée représentant le soleil au-dessus de deux '
              'montagnes.',
  'caption': 'Image en largeur normale et en 16x9',
@@ -1421,9 +1424,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 <figure class="fr-content-media"
@@ -1447,7 +1447,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 2
           </h3>
           <div class="fr-my-2w">
             
@@ -1459,11 +1459,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-zqqgpzsdlbhruwav">
-    Données d’exemple
+          aria-controls="accordion-mdzlaenhisyphafg">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-zqqgpzsdlbhruwav">
+  <div class="fr-collapse" id="accordion-mdzlaenhisyphafg">
     <pre class="dsfr-code">{'alt_text': 'Silhouette stylisée représentant le soleil au-dessus de deux '
              'montagnes.',
  'caption': 'Image en largeur normale et en 4x3',
@@ -1476,9 +1476,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 <figure class="fr-content-media"
@@ -1502,7 +1499,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 3
           </h3>
           <div class="fr-my-2w">
             
@@ -1514,11 +1511,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-fxixpwuunmpfhjcz">
-    Données d’exemple
+          aria-controls="accordion-qagnhziudidfdzhy">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-fxixpwuunmpfhjcz">
+  <div class="fr-collapse" id="accordion-qagnhziudidfdzhy">
     <pre class="dsfr-code">{'alt_text': 'Silhouette stylisée représentant le soleil au-dessus de deux '
              'montagnes.',
  'caption': 'Image plus large que la colonne de contenu',
@@ -1531,9 +1528,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 <figure class="fr-content-media fr-content-media--lg"
@@ -1557,7 +1551,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 4
           </h3>
           <div class="fr-my-2w">
             
@@ -1569,11 +1563,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-cuxbkvntaobxrtuo">
-    Données d’exemple
+          aria-controls="accordion-buvydizypdndeiim">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-cuxbkvntaobxrtuo">
+  <div class="fr-collapse" id="accordion-buvydizypdndeiim">
     <pre class="dsfr-code">{'alt_text': 'Silhouette stylisée représentant le soleil au-dessus de deux '
              'montagnes.',
  'caption': 'Image SVG avec un lien dans la légende.\n'
@@ -1946,9 +1940,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 <figure class="fr-content-media"
@@ -2155,7 +2146,7 @@ p code, li code {
           
         
           <h3 class="fr-mt-3w">
-            Données
+            Exemple 5
           </h3>
           <div class="fr-my-2w">
             
@@ -2167,11 +2158,11 @@ p code, li code {
   <button type="button"
           class="fr-accordion__btn"
           aria-expanded="false"
-          aria-controls="accordion-hbzoqjfvpbcygrtu">
-    Données d’exemple
+          aria-controls="accordion-rhcpmfnsirgfszlx">
+    Données de l’exemple
   </button>
   </h3>
-  <div class="fr-collapse" id="accordion-hbzoqjfvpbcygrtu">
+  <div class="fr-collapse" id="accordion-rhcpmfnsirgfszlx">
     <pre class="dsfr-code">{'alt_text': '',
  'caption': 'Vidéo avec transcription',
  'iframe': {'height': '450',
@@ -2323,9 +2314,6 @@ p code, li code {
             
             
           </div>
-          <h3>
-            Résultat
-          </h3>
           
             
 <figure class="fr-content-media"
@@ -2354,25 +2342,25 @@ p code, li code {
 <div class="fr-transcription">
   <button class="fr-transcription__btn"
           aria-expanded="false"
-          aria-controls="fr-transcription__collapse-transcription-jkbggaaijlumrssv">
+          aria-controls="fr-transcription__collapse-transcription-rxycfnyakxwkhele">
     Transcription
   </button>
-  <div class="fr-collapse" id="fr-transcription__collapse-transcription-jkbggaaijlumrssv">
+  <div class="fr-collapse" id="fr-transcription__collapse-transcription-rxycfnyakxwkhele">
     <div class="fr-transcription__footer">
       <div class="fr-transcription__actions-group">
         
         <button class="fr-btn fr-btn--fullscreen"
-                aria-controls="fr-transcription-modal-transcription-jkbggaaijlumrssv"
+                aria-controls="fr-transcription-modal-transcription-rxycfnyakxwkhele"
                 data-fr-opened="false"
                 title="Agrandir">
           Agrandir
         </button>
       </div>
     </div>
-    <dialog id="fr-transcription-modal-transcription-jkbggaaijlumrssv"
+    <dialog id="fr-transcription-modal-transcription-rxycfnyakxwkhele"
             class="fr-modal"
             role="dialog"
-            aria-labelledby="fr-transcription-modal-transcription-jkbggaaijlumrssv-title">
+            aria-labelledby="fr-transcription-modal-transcription-rxycfnyakxwkhele-title">
       <div class="fr-container fr-container--fluid fr-container-md">
         <div class="fr-grid-row fr-grid-row--center">
           <div class="fr-col-12 fr-col-md-10 fr-col-lg-8">
@@ -2380,13 +2368,13 @@ p code, li code {
               <div class="fr-modal__header">
                 
                 <button class="fr-btn--close fr-btn"
-                        aria-controls="fr-transcription-modal-transcription-jkbggaaijlumrssv"
+                        aria-controls="fr-transcription-modal-transcription-rxycfnyakxwkhele"
                         title="Fermer">
                   Fermer
                 </button>
               </div>
               <div class="fr-modal__content">
-                <h1 id="fr-transcription-modal-transcription-jkbggaaijlumrssv-title"
+                <h1 id="fr-transcription-modal-transcription-rxycfnyakxwkhele-title"
                     class="fr-modal__title">
                   Transcription
                 </h1>
@@ -2591,6 +2579,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -2602,12 +2592,12 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="WvDqCxnpqXX2gBddZaiqpw=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="uKD8gxPgRUDzbTU/g/qo0w=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="WvDqCxnpqXX2gBddZaiqpw=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="uKD8gxPgRUDzbTU/g/qo0w=="></script>
 
 
     

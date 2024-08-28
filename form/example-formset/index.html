@@ -15,7 +15,7 @@
     
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/dsfr/dsfr.min.css"
-      integrity="sha384-o120rAaup4CzJrQdFEFO9kOQOtOgnU638Gfc2I0G4weygChe91oP/niuETDUHtUo">
+      integrity="sha384-4CMBG/bSDnHTO4BzePaP0c1y81c6oAT2XKpjVi1vzQl4AtMBSoAuUVv5XgRNXJAj">
 <link rel="stylesheet"
       href="/django-dsfr/static/dsfr/dist/utility/utility.min.css"
       integrity="">
@@ -160,7 +160,9 @@
           </div>
           
   
-  <div class="fr-header__search fr-modal" id="modal-search">
+  <div class="fr-header__search fr-modal"
+       id="modal-search"
+       aria-label="Rechercher">
     <div class="fr-container fr-container-lg--fluid">
       
       <button class="fr-btn--close fr-btn"
@@ -276,9 +278,9 @@
                 </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -365,9 +367,9 @@
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -454,9 +456,9 @@
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -543,9 +545,9 @@
                   </div>
                 
                   <div class="fr-col-12 fr-col-lg-3">
-                    <h5 class="fr-mega-menu__category">
+                    <h3 class="fr-mega-menu__category">
                       <a class="fr-nav__link" href="#" target="_self">Composants implémentés</a>
-                    </h5>
+                    </h3>
                     <ul class="fr-mega-menu__list">
                       
                         
@@ -828,7 +830,7 @@
   
   <div id="form">
     <form method="post" enctype="multipart/form-data" id="form-base">
-      <input type="hidden" name="csrfmiddlewaretoken" value="ZQR73pQPXMBIJYuZavlyjaLaHiudzFETK66NLzWlbkbxjiB1zJqfZPfgdN1bSjfu">
+      <input type="hidden" name="csrfmiddlewaretoken" value="mBikncgICGQFKOrt6ue373HUWB64wxxZVc5knFpwnBJnB1YLivJK1g2vVu0lxjIj">
       
       
   <h1>
@@ -923,7 +925,7 @@
   
 
       
-        <div class="row1 formset-row-book_set formset"
+        <div class="row1 formset-row-book_set formset fr-background-alt--grey fr-px-6v fr-py-6v fr-mb-4v"
              id="formset-0">
           
             <input type="hidden" name="book_set-0-id" id="id_book_set-0-id">
@@ -938,7 +940,7 @@
 
 <div class="fr-select-group">
   <label for="id_book_set-0-author" class="fr-label">
-    Author*
+    Auteur*
     
   </label>
   
@@ -1154,21 +1156,23 @@
 
           
           <div class="fr-mt-2w">
-          <a id="remove-0" href="#" onclick="removeFormset(0)">Supprimer cet élément <span class="fr-fi-delete-line" aria-hidden="true"></span>
-          <br />
-          <br />
-        </a>
-      </div>
+            <button id="remove-0"
+                    type="button"
+                    class="fr-btn fr-btn--secondary fr-fi-delete-line fr-btn--icon-right fr-mt-1w"
+                    onclick="removeFormset(0)">
+              Supprimer cet élément
+            </button>
+          </div>
+        </div>
+      
+      <button id="add-form"
+              type="button"
+              class="fr-btn fr-btn--secondary fr-fi-add-circle-line fr-btn--icon-right fr-mt-1w">
+        Ajouter un élément
+      </button>
     </div>
+    <br />
   
-  <button id="add-form"
-          type="button"
-          class="fr-btn fr-btn--secondary fr-fi-add-circle-line fr-btn--icon-right fr-mt-1w">
-    Ajouter un élément
-  </button>
-</div>
-<br />
-
 
 
   <script type="text/javascript">let objectName = "book";</script>
@@ -1306,6 +1310,8 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
              target="_blank"
              rel="noopener external"
              title="Licence etalab-2.0 - Ouvre une nouvelle fenêtre">licence etalab-2.0</a>
+             
+             
         </p>
       </div>
     </div>
@@ -1317,12 +1323,12 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
     
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
-        integrity="sha384-2eck9tCbf4bg7Ry/9umF+meaBlLy9FhuBnHgy+WX5U0i5KdS02wBSjgAWGGJtC74"
-         nonce="orXYpHupWbFOecjXY/FpGw=="></script>
+        integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
+         nonce="6C9dEEfxDresQdW0L45TmA=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
-        integrity="sha384-apopLPiAOE8whfeDupMOjP0SuJZCeJ10givr3/HSxM/tlsQ3SrwE3epVEjIfwEqY"
-         nonce="orXYpHupWbFOecjXY/FpGw=="></script>
+        integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
+         nonce="6C9dEEfxDresQdW0L45TmA=="></script>
 
 
     
