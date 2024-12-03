@@ -824,10 +824,12 @@
     Exemple de formulaire
   </h1>
   <form action="/django-dsfr/form/example/" method="post">
-    <input type="hidden" name="csrfmiddlewaretoken" value="zV7eZgewaCBhHezqe1XH7szdH7G9ZAPXaAZ0CyKkzK5ywwNrimG0yxAcdcS1Jfwv">
+    <input type="hidden" name="csrfmiddlewaretoken" value="72LyjHSxevMzYCjYA1bcdmpLrQcSiqSJ443j0uQFI5gzRX1kXCNbBlLxtXAyTouX">
     <div class="fr-input-group">
   <label for="id_user_name" class="fr-label">
+    
     Nom d’utilisateur*
+    
     
   </label>
   
@@ -838,15 +840,18 @@
 
 
 
+
   
 
   
 
 <div class="fr-input-group">
   <label for="id_user_email" class="fr-label">
+    
     Adresse électronique
     
-      <span class="fr-hint-text">Format attendu : prenom.nom@domaine.fr</span>
+      <span class="fr-hint-text">Format attendu : <code>prenom.nom@domaine.fr</code></span>
+    
     
   </label>
   
@@ -857,13 +862,16 @@
 
 
 
+
   
 
   
 
 <div class="fr-input-group">
   <label for="id_password" class="fr-label">
+    
     Mot de passe
+    
     
   </label>
   
@@ -874,15 +882,18 @@
 
 
 
+
   
 
   
 
 <div class="fr-input-group">
   <label for="id_sample_number" class="fr-label">
+    
     Nombre entier*
     
       <span class="fr-hint-text">Un nombre inférieur à 0 déclenchera un message d’erreur</span>
+    
     
   </label>
   
@@ -893,13 +904,16 @@
 
 
 
+
   
 
   
 
 <div class="fr-input-group">
   <label for="id_sample_decimal" class="fr-label">
+    
     Nombre décimal
+    
     
   </label>
   
@@ -910,15 +924,18 @@
 
 
 
+
   
 
   
 
 <div class="fr-input-group fr-input-group--disabled">
   <label for="id_sample_disabled_field" class="fr-label">
+    
     Champ désactivé
     
       <span class="fr-hint-text">Ce champ est désactivé</span>
+    
     
   </label>
   
@@ -929,13 +946,16 @@
 
 
 
+
   
 
   
 
 <div class="fr-input-group">
   <label for="id_sample_date" class="fr-label">
+    
     Date
+    
     
   </label>
   
@@ -943,6 +963,7 @@
   
   
 </div>
+
 
 
 
@@ -969,7 +990,9 @@
 
 <div class="fr-select-group">
   <label for="id_sample_select" class="fr-label">
+    
     Liste déroulante
+    
     
   </label>
   
@@ -987,13 +1010,16 @@
 
 
 
+
   
 
   
 
 <div class="fr-select-group">
   <label for="id_sample_multiple_select" class="fr-label">
+    
     Liste déroulante à choix multiples
+    
     
   </label>
   
@@ -1008,6 +1034,7 @@
   
   
 </div>
+
 
 
 
@@ -1175,9 +1202,207 @@
 
   
 
+<div class="fr-radio-group">
+  <label for="" class="fr-label">
+    
+    Cases à cocher
+    
+      <span class="fr-hint-text">Exemple de boutons radios riches</span>
+    
+    
+  </label>
+  
+    <fieldset id="id_sample_rich_radio"
+            class="fr-fieldset"
+            aria-labelledby="id_sample_rich_radio-legend">
+    
+      
+        
+          <div class="fr-fieldset__element">
+  <div class="fr-radio-group fr-radio-rich">
+    <input value="1"
+           type="radio"
+           id="id_sample_rich_radio_0"
+           name="sample_rich_radio"
+            dsfr="dsfr" id="id_sample_rich_radio_0">
+    <label class="fr-label" for="id_sample_rich_radio_0">
+      <strong>Item 1</strong>
+    </label>
+    
+      <div class="fr-radio-rich__pictogram">
+        <img src="/django-dsfr/static/img/placeholder.1x1.png"
+              />
+      </div>
+    
+  </div>
+</div>
+
+        
+        
+    
+      
+        
+          <div class="fr-fieldset__element">
+  <div class="fr-radio-group fr-radio-rich">
+    <input value="2"
+           type="radio"
+           id="id_sample_rich_radio_1"
+           name="sample_rich_radio"
+            dsfr="dsfr" id="id_sample_rich_radio_1">
+    <label class="fr-label" for="id_sample_rich_radio_1">
+      <strong>Item 2</strong>
+    </label>
+    
+      <div class="fr-radio-rich__pictogram">
+        <img src="/django-dsfr/static/img/placeholder.1x1.png"
+              />
+      </div>
+    
+  </div>
+</div>
+
+        
+        
+    
+      
+        
+          <div class="fr-fieldset__element">
+  <div class="fr-radio-group fr-radio-rich">
+    <input value="3"
+           type="radio"
+           id="id_sample_rich_radio_2"
+           name="sample_rich_radio"
+            dsfr="dsfr" id="id_sample_rich_radio_2">
+    <label class="fr-label" for="id_sample_rich_radio_2">
+      <strong>Item 3</strong>
+    </label>
+    
+      <div class="fr-radio-rich__pictogram">
+        <img src="/django-dsfr/static/img/placeholder.1x1.png"
+              />
+      </div>
+    
+  </div>
+</div>
+
+        
+        
+    
+  </fieldset>
+  
+  
+</div>
+
+
+
+
+  
+
+  
+
+<div class="fr-radio-group">
+  <label for="" class="fr-label">
+    
+    Cases à cocher
+    
+      <span class="fr-hint-text">Exemple de boutons radios riches en ligne</span>
+    
+    
+  </label>
+  
+    <fieldset id="id_inline_rich_radio"
+            class="fr-fieldset"
+            aria-labelledby="id_inline_rich_radio-legend">
+    
+      
+        
+          <div class="fr-fieldset__element fr-fieldset__element--inline">
+  <div class="fr-radio-group fr-radio-rich">
+    <input value="1"
+           type="radio"
+           id="id_inline_rich_radio_0"
+           name="inline_rich_radio"
+            dsfr="dsfr" id="id_inline_rich_radio_0">
+    <label class="fr-label" for="id_inline_rich_radio_0">
+      <strong>Item 1</strong>
+    </label>
+    
+      <div class="fr-radio-rich__pictogram">
+        <img src="/django-dsfr/static/img/placeholder.1x1.png"
+              />
+      </div>
+    
+  </div>
+</div>
+
+        
+        
+    
+      
+        
+          <div class="fr-fieldset__element fr-fieldset__element--inline">
+  <div class="fr-radio-group fr-radio-rich">
+    <input value="2"
+           type="radio"
+           id="id_inline_rich_radio_1"
+           name="inline_rich_radio"
+            dsfr="dsfr" id="id_inline_rich_radio_1">
+    <label class="fr-label" for="id_inline_rich_radio_1">
+      <strong>Item 2</strong>
+    </label>
+    
+      <div class="fr-radio-rich__pictogram">
+        <img src="/django-dsfr/static/img/placeholder.1x1.png"
+              />
+      </div>
+    
+  </div>
+</div>
+
+        
+        
+    
+      
+        
+          <div class="fr-fieldset__element fr-fieldset__element--inline">
+  <div class="fr-radio-group fr-radio-rich">
+    <input value="3"
+           type="radio"
+           id="id_inline_rich_radio_2"
+           name="inline_rich_radio"
+            dsfr="dsfr" id="id_inline_rich_radio_2">
+    <label class="fr-label" for="id_inline_rich_radio_2">
+      <strong>Item 3</strong>
+    </label>
+    
+      <div class="fr-radio-rich__pictogram">
+        <img src="/django-dsfr/static/img/placeholder.1x1.png"
+              />
+      </div>
+    
+  </div>
+</div>
+
+        
+        
+    
+  </fieldset>
+  
+  
+</div>
+
+
+
+
+  
+
+  
+
 <div class="fr-input-group">
   <label for="id_sample_comment" class="fr-label">
+    
     Sample comment
+    
     
   </label>
   
@@ -1189,13 +1414,16 @@
 
 
 
+
   
 
   
 
 <div class="fr-input-group">
   <label for="id_sample_json" class="fr-label">
+    
     Fichier JSON
+    
     
   </label>
   
@@ -1207,13 +1435,16 @@ null</textarea>
 
 
 
+
   
 
   
 
 <div class="fr-input-group">
   <label for="id_sample_file" class="fr-label">
+    
     Pièce jointe
+    
     
   </label>
   
@@ -1221,6 +1452,7 @@ null</textarea>
   
   
 </div>
+
 
 
 
@@ -1374,11 +1606,11 @@ target="_blank" rel="noreferrer noopener">Dépôt Github</a>
 <script type="module"
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.module.min.js"
         integrity="sha384-TcXr68fg/siMFa6WMoFtntRfwfPoawk7Wz+pnrV+z17crqhROwg2/GRBOaw7Iysy"
-         nonce="HR8v9yK3pKrpDj6encUPEA=="></script>
+         nonce="In/4lfBmeSRK+OAOAshB4Q=="></script>
 <script nomodule
         src="/django-dsfr/static/dsfr/dist/dsfr/dsfr.nomodule.min.js"
         integrity="sha384-6D+aTUzuRoyopt1Ol/+T7WcnBMAwxhx67azX1vSEt98q7uN0FBKzfDHSytt+IWo9"
-         nonce="HR8v9yK3pKrpDj6encUPEA=="></script>
+         nonce="In/4lfBmeSRK+OAOAshB4Q=="></script>
 
 
     
