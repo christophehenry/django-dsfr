@@ -1343,7 +1343,7 @@ def dsfr_tile(*args, **kwargs) -> dict:
     return {"self": tag_data}
 
 
-@register.inclusion_tag("dsfr/toggle.html")
+@register.simple_tag
 def dsfr_toggle(*args, **kwargs) -> dict:
     """
     Returns a toggle item. Takes a dict as parameter, with the following structure:
@@ -1383,13 +1383,28 @@ def dsfr_toggle(*args, **kwargs) -> dict:
     ]
     tag_data = parse_tag_args(args, kwargs, allowed_keys)
 
+    warnings.warn(
+        "{% dsfr_toggle %} is deprecated; please use the ToggleField form field instead",
+        DeprecationWarning,
+        stacklevel=3,
+    )
+
     if "id" not in tag_data:
         tag_data["id"] = generate_random_id("toggle")
 
     if "is_disabled" not in tag_data:
         tag_data["is_disabled"] = False
 
-    return {"self": tag_data}
+    from ..fields import ToggleField
+
+    field = ToggleField(label=tag_data["label"], help_text=tag_data.get("help_text", ""))
+    if tag_data.get("is_disabled", False):
+        field.widget.attrs["disabled"] = tag_data["is_disabled"]
+    if tag_data.get("extra_classes", None):
+        field.widget.dsfr_wrapper_class += " " + tag_data["extra_classes"]
+    if tag_data.get("id", None):
+        field.widget.attrs["id"] = tag_data["id"]
+    return Template("{{ field.as_field_group }}").render(Context({"field": field}))
 
 
 @register.inclusion_tag("dsfr/tooltip.html")
@@ -1587,8 +1602,8 @@ def dsfr_django_messages(
     )
 
 
-@register.inclusion_tag("dsfr/form_field_snippets/field_snippet.html")
-def dsfr_form_field(field) -> dict:
+@register.simple_tag(takes_context=True)
+def dsfr_form_field(context: Context, field) -> dict:
     """
     Returns the HTML for a form field snippet
 
@@ -1607,7 +1622,17 @@ def dsfr_form_field(field) -> dict:
     if field == "":
         raise AttributeError("Invalid form field name in dsfr_form_field.")
 
-    return {"field": field}
+    warnings.warn(
+        (
+            "{% dsfr_form_field field %} is deprecated; please use {{ field.as_field_group }}"
+            "of {{ field.as_hidden }} in your template instead"
+        ),
+        DeprecationWarning,
+        stacklevel=3,
+    )
+
+    with context.push("field", field) as ctx:
+        return Template("{{ field.as_field_group }}").render(ctx)
 
 
 register.filter(name="dsfr_input_class_attr", filter_func=dsfr_input_class_attr)
